@@ -31,6 +31,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <div
+            className="custom-cursor fixed top-0 left-0 w-3 h-3 bg-black rounded-full pointer-events-none z-[9999] transition-transform duration-100 -translate-x-1/2 -translate-y-1/2"
+            id="cursor"
+          ></div>
           {children}
         </ThemeProvider>
       </body>
